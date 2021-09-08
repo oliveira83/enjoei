@@ -1,0 +1,6 @@
+---
+default: -p relatorio -p json -p dev
+relatorio: --format pretty --format html --out=/support/reports_tests/feature_reports.html
+json: --format progress --format json --out=/support/reports_tests/feature_reports.json
+prod: ENV=prod
+dev: ENV=dev
