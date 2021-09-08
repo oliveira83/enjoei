@@ -7,4 +7,6 @@ Então('a api deve me retornar o status de sucesso no cadastro do produto') do
     expect(@product.code).to eql 200
     
     @product2 = @create_product.getProduct(@name)
+    expect(@product2).to be_truthy
+
 end

@@ -7,6 +7,8 @@ require "rspec"
 require "pry"
 require "yaml"
 require "json"
+require 'securerandom'
+
 
 
 CONFIG = YAML::load_file(File.join(__dir__, "/config/dev.yml"))

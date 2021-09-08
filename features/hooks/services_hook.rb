@@ -21,7 +21,7 @@ Before ('@create_product') do
         "accept": "application/json"
     }
     
-    @name = ('A'..'z').to_a.shuffle.first(8).join
+    @name = (0...6).map { ('a'..'z').to_a[rand(26)] }.join
 
     @body = {
         "name": @name,
